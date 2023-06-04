@@ -1,0 +1,29 @@
+
+[project]
+name = ""
+version = ""
+description = ""
+authors = [
+    {name = "matszewczyk", email = "mateusz.szewczyk@yahoo.com"},
+]
+dependencies = [
+    "fastapi>=0.95.1",
+    "pandas>=2.0.1",
+    "minio>=7.1.14",
+    "wget>=3.2",
+    "requests>=2.30.0",
+    "prefect>=2.10.11",
+    "prefect-aws>=0.3.2",
+    "prefect-docker>=0.2.3",
+    "prefect-github>=0.1.5",
+]
+requires-python = ">=3.10"
+license = {text = "MIT"}
+
+[tool.pdm.dev-dependencies]
+test = [
+    "pytest>=7.3.1",
+]
+dev = [
+    "ipykernel>=6.23.1",
+]
