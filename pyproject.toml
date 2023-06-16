@@ -16,6 +16,9 @@ dependencies = [
     "prefect-aws>=0.3.2",
     "prefect-docker>=0.2.3",
     "prefect-github>=0.1.5",
+    "prefect-azure>=0.2.8",
+    "adlfs>=2023.4.0",
+    "azure>=5.0.0",
 ]
 requires-python = ">=3.10"
 license = {text = "MIT"}
