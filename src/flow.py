@@ -15,7 +15,7 @@ raw_client = Minio(
 )
 
 
-@flow
+@flow(flow_run_name="{raw_object_name}")
 def flow(
     src_url, 
     raw_client, 
