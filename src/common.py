@@ -1,3 +1,4 @@
+
 from io import BytesIO, StringIO
 import pandas as pd
 from collections import namedtuple
@@ -11,7 +12,7 @@ def get_df_from_url(
     df = pd.read_csv(src_url, delimiter=delimiter)
     return df
 
-def save_df_to_raw(
+def save_df_to_lake(
         df: pd.DataFrame,
         trg_client,
         trg_bucket_name: str,
