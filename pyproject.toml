@@ -19,6 +19,7 @@ dependencies = [
     "prefect-azure>=0.2.8",
     "adlfs>=2023.4.0",
     "azure>=5.0.0",
+    "deltalake>=0.10.0",
 ]
 requires-python = ">=3.10"
 license = {text = "MIT"}
