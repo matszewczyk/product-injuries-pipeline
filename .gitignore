@@ -3,6 +3,9 @@ postgres_data/
 raw_data/
 raw_data_my/
 
+# dbt
+logs/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

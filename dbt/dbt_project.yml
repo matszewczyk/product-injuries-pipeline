@@ -34,5 +34,5 @@ models:
   product_injuries:
     # Config indicated by + and applies to all files under models/src/
     raw:
-      +materialized: view
+      +materialized: ephemeral
       +schema: raw # this would result in PUBLIC_staging

@@ -20,6 +20,10 @@ dependencies = [
     "adlfs>=2023.4.0",
     "azure>=5.0.0",
     "deltalake>=0.10.0",
+    "dbt-postgres>=1.5.2",
+    "prefect-airbyte>=0.2.0",
+    "prefect-dbt>=0.3.1",
+    "prefect-sqlalchemy>=0.2.4",
 ]
 requires-python = ">=3.10"
 license = {text = "MIT"}

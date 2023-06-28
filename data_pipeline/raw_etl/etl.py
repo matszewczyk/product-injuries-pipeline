@@ -1,6 +1,6 @@
 import pandas as pd
 from prefect import task
-from raw_data_pipeline.raw_data_client import read_df_from_raw, write_df_to_raw
+from data_pipeline.raw_etl.raw_data_client import write_df_to_raw
 
 @task
 def extract_from_url(src_url: str, src_delimiter: str):
