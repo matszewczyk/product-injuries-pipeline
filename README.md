@@ -6,7 +6,10 @@
 
 
 ## DBT Lineage
+![DBT Lineage](/docs/dbt_lineage.png)
 
+## Airbyte Connections
+![Airbyte](/docs/airbyte.png)
 
 ## Data Sources
 - [Injuries](https://data.world/awram/us-product-related-injuries)
