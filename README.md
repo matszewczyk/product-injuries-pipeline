@@ -37,10 +37,6 @@
           threads: 1
     ```
 5. Start the local orion server or connect to [Prefect Cloud](https://docs.prefect.io/2.10.18/cloud/cloud-quickstart/).
-6. Set all the required env variables:
-    ```
-    MINIO_ACCESS_KEY
-    MINIO_SECRET_KEY
-    ```
+6. Set all the required env variables for MINIO and Postgres connection.
 7. [TODO] Dashboard & API.
 8. [TODO] CICD with GitHub Actions.
