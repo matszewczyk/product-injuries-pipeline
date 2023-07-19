@@ -1,4 +1,3 @@
-# Use postgres/example user/password credentials
 version: '3.18'
 volumes:
   postgres_data:
@@ -9,9 +8,9 @@ services:
     image: postgres:15.3-alpine
     restart: always
     environment:
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: postgres
-      POSTGRES_DB: injuries
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
     ports:
       - '54320:5432'
     volumes:
@@ -27,6 +26,6 @@ services:
       # - home/mat/product_injuries_project/minio_data:/data
       - minio_data:/data
     environment:
-      - MINIO_ROOT_USER=minioadmin
-      - MINIO_ROOT_PASSWORD=minioadmin
+      - MINIO_ROOT_USER: ${MINIO_ROOT_USER}
+      - MINIO_ROOT_PASSWORD: ${MINIO_ROOT_PASSWORD}
     command: server /data --console-address ":9090"
